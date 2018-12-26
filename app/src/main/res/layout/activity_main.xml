@@ -10,8 +10,46 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.administrator.systemtts.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+
+    <EditText
+        android:id="@+id/et_word"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@null"
+        android:hint="请输入要播放的内容"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_pitch"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_word"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:hint="请输入语调,声音越高越尖"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_speech"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_pitch"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:hint="请输入语速"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_below="@+id/et_speech"
+        android:layout_marginTop="10dp"
+        android:text="播放"
+        android:textSize="14sp" />
+
+
 </RelativeLayout>
